@@ -6,7 +6,7 @@
 //return sum of all values in linked list using a recursive approach
 //if head is null return 0
 int recursiveSum(Node* head) {
-    if(!head){
+    if(head==0){
     return 0;
     }
 int sum =recursiveSum(head->next);
@@ -21,14 +21,7 @@ return head->data+sum;
 //you may assume the list has at least one element
 int recursiveLargestValue(Node* head) {
 
-int max = head->data;
-
-if(head==NULL)
-return max;
-
-recursiveLargestValue(head->next);
-if(max>head->data)
-return max = head->data;
+return 1;
 
 }
 
