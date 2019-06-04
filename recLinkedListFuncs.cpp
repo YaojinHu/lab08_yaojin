@@ -9,9 +9,9 @@ int recursiveSum(Node* head) {
     if(!head){
     return 0;
     }
-int sum =head->data + recursiveSum(head);
+int sum =recursiveSum(head->next);
 
-return sum;
+return head->data+sum;
 }
 
 
