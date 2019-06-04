@@ -34,21 +34,17 @@ return false;
 for(int k=0; k<a.length(); k++){
   if(a[k]!=b[k])
   return false;
+  else
+  return true;
 }
 
-return true;
+
 }
 
 /* Precondition: s1 is a valid string that may contain upper or lower case alphabets, no spaces or special characters
  * Postcondition: Returns true if s1 is a palindrome, false otherwise
  *You should provide a recursive solution*/
 bool isPalindrome(const string s1){
-
-for(int i=0; i<s1.length();i++){
-    if(isalpha(s1[i]))
-    s1+=tolower(s1[i]);
-}
-
 
 
 int i=0;
