@@ -34,9 +34,7 @@ return false;
 for(int k=0; k<a.length(); k++){
   
   for(int c=0; c<b.length();c++){
-      if(a[k]==b[c])
-      break;
-      else
+      if(a[k]!=b[c])
       return false;
       }
       
