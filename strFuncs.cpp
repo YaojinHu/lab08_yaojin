@@ -34,12 +34,12 @@ return false;
 for(int k=0; k<a.length(); k++){
   
   for(int c=0; c<b.length();c++){
-      if(a[k]!=b[k])
+      if(a[k]!=b[c])
       return false;
       }
       
-  return true;
 }
+return true;
 }
 
 /* Precondition: s1 is a valid string that may contain upper or lower case alphabets, no spaces or special characters
