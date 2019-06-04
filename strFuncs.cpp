@@ -25,17 +25,18 @@ for(int i=0; i<s2.length();i++){
     b+=tolower(s2[i]);
 }
 
-if(a==b){
-return true;}
-else(a.length()!=b.length()){
-return false;}
+if(a==b)
+return true;
+
+if(a.length()!=b.length())
+return false;
 
 for(int k=0; k<a.length(); k++){
-  
-for(int p=0;p<b.length();p++){
-  }
+  if(a[k]!=b[k])
+  return false;
 }
 
+}
 
 /* Precondition: s1 is a valid string that may contain upper or lower case alphabets, no spaces or special characters
  * Postcondition: Returns true if s1 is a palindrome, false otherwise
