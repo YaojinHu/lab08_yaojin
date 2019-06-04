@@ -12,15 +12,51 @@ using namespace std;
  * affect your result. 
  */
 bool isAnagram(string s1, string s2){
-  return true;
+  string a="";
+  string b="";
+
+
+for(int i=0; i<s1.length();i++){
+    if(isalpha(s1[i]))
+    a+=tolower(s1[i]);
 }
+for(int i=0; i<s2.length();i++){
+    if(isalpha(s2[i]))
+    b+=tolower(s2[i]);
+}
+
+if(a==b){
+return true;}
+else(a.length()!=b.length()){
+return false;}
+
+for(int k=0; k<a.length(); k++){
+  
+for(int p=0;p<b.length();p++){
+  }
+}
+
 
 /* Precondition: s1 is a valid string that may contain upper or lower case alphabets, no spaces or special characters
  * Postcondition: Returns true if s1 is a palindrome, false otherwise
  *You should provide a recursive solution*/
 bool isPalindrome(const string s1){
+int i=0;
+int j=s1.length()-1;
 
-  return true;
+while(i<j){
+tolower(s1[i]);
+tolower(s1[j]);
+
+if(s1[i]!=s1[j])
+{
+  return false;
+}
+
+i++;
+j--;
+}
+ return true;
 }
 
 
