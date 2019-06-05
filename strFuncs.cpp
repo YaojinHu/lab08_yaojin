@@ -48,22 +48,16 @@ return true;
 if(s1.length()==1)
 return true;
 
-int i=0;
-int j=s1.length()-1;
+ int i=0;
+ int j=s1.length()-1;
 
-while(i<j){
-tolower(s1[i]);
-tolower(s1[j]);
+ if(s1[i]!=s1[j])
+   return false;
+ 
+ isPalindrome(s1.substr(1,s1.length()-2);
 
-if(s1[i]!=s1[j])
-{
-  return false;
-}
 
-i++;
-j--;
-}
- return true;
+      
 }
 
 
