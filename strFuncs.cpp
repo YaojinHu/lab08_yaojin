@@ -25,19 +25,16 @@ for(int i=0; i<s2.length();i++){
     b+=tolower(s2[i]);
 }
 
-if(a==b)
-return true;
-
 if(a.length()!=b.length())
 return false;
 
 sort(a.begin(),a.end());
 sort(b.begin(),b.end());
 
-for(int k=0; k<a;i++)
+for(int k=0; k<a;i++){
   if(a[k]!=b[k])
   return false;
-  
+}
   return true;
 
 }
