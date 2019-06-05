@@ -21,18 +21,7 @@ return head->data+sum;
 //you may assume the list has at least one element
 int recursiveLargestValue(Node* head) {
 
-Node* p=head;
-Node* max=p;
-int max=p->data;
-
-if(
-
-if(recursiveLargestValue(head->next)
-
-
-
-
-return max->data;
+return 42;
 
 }
 

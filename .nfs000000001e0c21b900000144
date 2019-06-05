@@ -31,15 +31,15 @@ return true;
 if(a.length()!=b.length())
 return false;
 
-sort(a.begin(),a.end());
-sort(b.begin(),b.end());
-
-for(int k=0; k<a;i++)
-  if(a[k]!=b[k])
-  return false;
+for(int k=0; k<a.length(); k++){
   
-  return true;
-
+  for(int c=0; c<b.length();c++){
+      if(a[k]!=b[c])
+      return false;
+      }
+      
+}
+return true;
 }
 
 /* Precondition: s1 is a valid string that may contain upper or lower case alphabets, no spaces or special characters
@@ -47,10 +47,6 @@ for(int k=0; k<a;i++)
  *You should provide a recursive solution*/
 bool isPalindrome(const string s1){
 
-if(s1=="")
-return true;
-if(s1.length()==1)
-return true;
 
 int i=0;
 int j=s1.length()-1;
