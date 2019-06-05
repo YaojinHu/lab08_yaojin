@@ -54,7 +54,7 @@ return true;
  if(s1[i]!=s1[j])
    return false;
  
- isPalindrome(s1.substr(1,s1.length()-2);
+ if(s1[i]==s1[j] && isPalindrome(s1.substr(1,s1.length()-2)));
 	      return true;
       
 }
