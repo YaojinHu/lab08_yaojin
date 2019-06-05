@@ -54,9 +54,9 @@ return true;
 
  if(tolower(s1[i])!=tolower(s1[j]))
    return false;
- 
- if(tolower(s1[i])==tolower(s1[j]) && isPalindrome(s1.substr(1,s1.length()-2)));
-	      return true;
+ else
+  return (isPalindrome(s1.substr(1,s1.length()-2)));
+
       
 }
 
