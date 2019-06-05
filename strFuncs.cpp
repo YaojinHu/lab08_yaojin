@@ -17,11 +17,11 @@ bool isAnagram(string s1, string s2){
 
 
 for(int i=0; i<s1.length();i++){
-    if(isalpha(s1[i]))
+  if(!ispunct(s1[i])&&!isspace(s1[i]))
     a+=tolower(s1[i]);
 }
 for(int i=0; i<s2.length();i++){
-    if(isalpha(s2[i]))
+    if(!ispunct(s2[i]&&!isspace(s2[i]))
     b+=tolower(s2[i]);
 }
 
@@ -31,11 +31,10 @@ return false;
 sort(a.begin(),a.end());
 sort(b.begin(),b.end());
 
-for(int k=0; k<a;i++){
-  if(a[k]!=b[k])
-  return false;
-}
-  return true;
+ if(a==b)
+   return true;
+ else
+   return false;
 
 }
 
