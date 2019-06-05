@@ -51,10 +51,12 @@ return true;
  int i=0;
  int j=s1.length()-1;
 
- if(s1[i]!=s1[j])
+ tolower(s1);
+
+ if(tolower(s1[i])!=tolower(s1[j]))
    return false;
  
- if(s1[i]==s1[j] && isPalindrome(s1.substr(1,s1.length()-2)));
+ if(tolower(s1[i])==tolower(s1[j]) && isPalindrome(s1.substr(1,s1.length()-2)));
 	      return true;
       
 }
