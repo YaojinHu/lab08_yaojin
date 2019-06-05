@@ -51,7 +51,6 @@ return true;
  int i=0;
  int j=s1.length()-1;
 
- tolower(s1);
 
  if(tolower(s1[i])!=tolower(s1[j]))
    return false;
